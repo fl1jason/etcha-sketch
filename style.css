@@ -1,0 +1,126 @@
+@font-face { font-family: Emulogic ; src: url('./fonts/Emulogic-zrEw.ttf'); } 
+@font-face { font-family: Emulogic ; font-weight: bold; src: url('./fonts/Emulogic-zrEw.ttf');}
+
+body {
+  font-family: Emulogic, sans-serif; 
+  margin: auto;
+  background-color: #ffffff;
+}
+
+#frame {  
+  width: 720px;
+  height:510px;
+  border: none;
+  text-align: left;
+  position: relative;
+  top: 155px;
+  left: 240px;
+}
+
+.pixel {
+  width: 5px;
+  height: 5px;
+  border: none;
+  float: left;
+  margin: 0px;
+  background-color: none;
+}
+
+.drawn {
+  background-color: black;
+}
+
+#bat {
+  background-color: black;
+  border: none;
+  text-align: center;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  left: 360px;
+  top: 400px;  
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  background-position: center; 
+  width: 1200px;
+  margin:auto;
+}
+
+#pad {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./img/22ETCH-jumbo.jpg");
+  background-repeat: no-repeat;
+  min-height: 836px;
+  min-width: 1024px;
+  background-position: center; 
+}
+
+#controls {
+  z-index: 0;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+}
+
+.control-switch {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-horizontal{
+  left: 72px;
+  top: 142px;  
+  position: relative;
+}
+
+.control-vertical{
+  left: 718px;
+  top: 142px;  
+  position: relative;
+}
+
+.input {
+  border: none;
+  margin: 0px;
+}
+
+input[type=radio], input[type=checkbox] {
+  margin: 0;
+  line-height: normal;
+}
+
+#header {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Standard syntax */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.apply-shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}

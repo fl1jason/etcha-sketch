@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FL1 UX Design Tool from the future</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./code.js"></script>
+    <script src="./input-knobs.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>UX Design Tool from the future</h1>
+      </div>
+      <div id="pad">
+        <div id="frame">          
+          
+        </div>
+
+        <div id="controls">
+          <div class="control-horizontal">
+            <input type="range" class="input-knob" data-diameter="200" data-src="./img/knob70.png" data-sprites="100" min="1" max="200" step="1" oninput="onMoveHorizontal(this)" onchange="onMoveHorizontal(this)" /> 
+          </div>
+          <div class="control-switch control-vertical">
+            <input type="range" class="input-knob" data-diameter="200" data-src="./img/knob70.png" data-sprites="100" min="1" max="160" step="1" oninput="onMoveVertical(this)" onchange="onMoveVertical(this)" /> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
